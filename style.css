@@ -1,107 +1,86 @@
-/* Сброс стандартных отступов */
-* {
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Контейнер для центрирования контента */
 .container {
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Стиль хедера */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Стиль для главного баннера */
+/* Стили для хедера с фоном */
 #hero {
     background: url('https://via.placeholder.com/1600x600/FF6600/FFFFFF?text=ГБЦ+Ремонт') no-repeat center center/cover;
     color: #fff;
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
-#hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
 #hero p {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-.cta-btn {
+.btn {
     background-color: #FF6600;
-    color: #fff;
+    color: white;
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 1.2em;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
-.cta-btn:hover {
-    background-color: #e65c00;
-}
-
-/* Стиль для секции "О нас" */
-#about {
+/* Стили для секции услуг */
+#services {
     background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-#about h3 {
-    font-size: 32px;
+#services h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #666;
+#services ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Стиль для футера */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+#services li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Стили для секции контактов */
+#contact {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
 }
 
 }
