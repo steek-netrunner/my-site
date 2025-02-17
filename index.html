@@ -14,48 +14,11 @@
             text-align: center;
             background-color: #f4f4f4;
         }
-        .overlay {
-            background: rgba(0, 0, 0, 0.7);
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        h1 {
-            font-size: 48px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            z-index: 1;
-        }
-        p {
-            font-size: 20px;
-            max-width: 600px;
-            margin: 10px auto;
-            z-index: 1;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            text-transform: uppercase;
-            background: #ff6600;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-            z-index: 1;
-        }
-        .btn:hover {
-            background: #e55b00;
-        }
-        /* Стили для хедера с фоном */
+        /* Хедер с фоном */
         #hero {
             position: relative;
             background: url('https://images.unsplash.com/photo-1645549047893-b0c6447aec2b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
-            height: 100vh; /* На весь экран */
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,7 +54,11 @@
             margin-top: 20px;
             z-index: 1;
         }
-        /* Стили для секции услуг */
+        .btn:hover {
+            background-color: #e55b00;
+        }
+        
+        /* Секция услуг */
         #services {
             background-color: #fff;
             padding: 40px;
@@ -109,19 +76,37 @@
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        /* Стили для секции картинок */
+
+        /* Секция с изображениями */
         .image-section {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin-top: 40px;
+            gap: 20px;
         }
         .image-section img {
-            width: 30%;
+            width: 45%;
             border-radius: 10px;
+        }
+
+        /* Секция с контактами */
+        #contact {
+            background-color: #333;
+            padding: 40px;
+            color: white;
+            margin-top: 40px;
+        }
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        #contact p {
+            font-size: 1.5em;
         }
     </style>
 </head>
 <body>
+    <!-- Хедер -->
     <div id="hero">
         <div class="overlay">
             <h1>Ремонт ГБЦ</h1>
@@ -130,6 +115,7 @@
         </div>
     </div>
 
+    <!-- Услуги -->
     <div id="services">
         <h2>Наши услуги</h2>
         <ul>
@@ -140,19 +126,22 @@
         </ul>
     </div>
 
+    <!-- Изображения -->
     <div class="image-section">
         <img src="https://cdn.pixabay.com/photo/2015/12/20/00/58/engine-1100580_960_720.jpg" alt="Двигатель">
         <img src="https://images.unsplash.com/photo-1627829182695-6a2d3ecd0018?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Спортивный двигатель">
-        <img src="https://images.pexels.com/photos/2027045/pexels-photo-2027045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Мотор в автомобиле">
     </div>
 
+    <!-- Контакты -->
     <div id="contact">
         <h2>Контакты</h2>
         <p>Телефон: +7 700 123 45 67</p>
         <p>Email: info@gbc-repair.kz</p>
+        <p>Адрес: г. Шымкент, ул. Ремонтников, 15</p>
     </div>
 </body>
 </html>
+
 
 
 
