@@ -1,16 +1,55 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+/* Сброс стандартных отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-main {
-  padding: 20px;
+header h1 {
+    margin-bottom: 10px;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
