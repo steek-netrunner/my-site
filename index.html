@@ -10,10 +10,15 @@
             margin: 0;
             padding: 0;
             font-family: 'Oswald', sans-serif;
-            color: white;
-            text-align: center;
             background-color: #f4f4f4;
         }
+
+        /* Общие стили */
+        h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
         /* Хедер с фоном */
         #hero {
             position: relative;
@@ -25,25 +30,29 @@
             color: white;
             text-align: center;
         }
+
         #hero .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Темный налет для улучшения видимости текста */
+            background: rgba(0, 0, 0, 0.5);
         }
+
         #hero h1 {
             font-size: 4em;
             color: #fff;
             z-index: 1;
         }
+
         #hero p {
             font-size: 1.5em;
             color: #fff;
             margin-top: 10px;
             z-index: 1;
         }
+
         .btn {
             background-color: #FF6600;
             color: white;
@@ -54,93 +63,84 @@
             margin-top: 20px;
             z-index: 1;
         }
-        .btn:hover {
-            background-color: #e55b00;
-        }
-        
-        /* Секция услуг */
+
+        /* Стили для секции услуг */
         #services {
             background-color: #fff;
             padding: 40px;
             margin-top: 20px;
         }
+
         #services h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
         }
+
         #services ul {
             list-style-type: none;
             padding: 0;
         }
+
         #services li {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
 
-        /* Секция с изображениями */
-        .image-section {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-            gap: 20px;
-        }
-        .image-section img {
-            width: 45%;
-            border-radius: 10px;
+        /* Стили для секции контактов */
+        #contact {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 20px;
         }
 
-        /* Секция с контактами */
-        #contact {
-            background-color: #333;
-            padding: 40px;
-            color: white;
-            margin-top: 40px;
-        }
         #contact h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
         }
+
         #contact p {
             font-size: 1.5em;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <!-- Хедер -->
-    <div id="hero">
-        <div class="overlay">
+
+    <!-- Главный экран -->
+    <section id="hero">
+        <div class="overlay"></div>
+        <div>
             <h1>Ремонт ГБЦ</h1>
             <p>Профессиональный ремонт и обслуживание головок блока цилиндров. Качество и надёжность.</p>
             <a href="#" class="btn">Записаться на ремонт</a>
         </div>
-    </div>
+    </section>
 
-    <!-- Услуги -->
-    <div id="services">
-        <h2>Наши услуги</h2>
-        <ul>
-            <li>Профессиональный ремонт головок блока цилиндров</li>
-            <li>Диагностика и обслуживание двигателей</li>
-            <li>Ремонт турбонаддувов</li>
-            <li>Восстановление моторов после перегрева</li>
-        </ul>
-    </div>
+    <!-- Секция услуг -->
+    <section id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <ul>
+                <li>Профилактический ремонт</li>
+                <li>Обслуживание и диагностика</li>
+                <li>Модернизация ГБЦ</li>
+            </ul>
+        </div>
+    </section>
 
-    <!-- Изображения -->
-    <div class="image-section">
-        <img src="https://cdn.pixabay.com/photo/2015/12/20/00/58/engine-1100580_960_720.jpg" alt="Двигатель">
-        <img src="https://images.unsplash.com/photo-1627829182695-6a2d3ecd0018?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Спортивный двигатель">
-    </div>
+    <!-- Секция контактов -->
+    <section id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Адрес: Шымкент, ул. Примерная, 15</p>
+            <p>Телефон: +7 777 123 4567</p>
+            <p>Email: info@remont-gbc.kz</p>
+        </div>
+    </section>
 
-    <!-- Контакты -->
-    <div id="contact">
-        <h2>Контакты</h2>
-        <p>Телефон: +7 700 123 45 67</p>
-        <p>Email: info@gbc-repair.kz</p>
-        <p>Адрес: г. Шымкент, ул. Ремонтников, 15</p>
-    </div>
 </body>
 </html>
+
 
 
 
