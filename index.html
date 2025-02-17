@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ремонт ГБЦ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Подключаем шрифт -->
-    <link rel="stylesheet" href="style.css">
+    <title>Сервис по ремонту ГБЦ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e55b00;
+        }
+    </style>
 </head>
 <body>
-    <header id="hero">
-        <div class="overlay"></div> <!-- Наложение для улучшения видимости текста -->
-        <div class="container">
-            <h1>Ремонт ГБЦ</h1>
-            <p>Мы занимаемся ремонтом головок блока цилиндров</p>
-            <a href="#contact" class="btn">Записаться на ремонт</a>
-        </div>
-    </header>
-
-    <section id="services">
-        <div class="container">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Ремонт ГБЦ</li>
-                <li>Шлифовка головки</li>
-                <li>Проверка на герметичность</li>
-                <li>Замена прокладок</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Контакты</h2>
-            <p>Адрес: Шымкент, ул. Примерная, 5</p>
-            <p>Телефон: +7 (777) 123-45-67</p>
-        </div>
-    </section>
+    <div class="overlay">
+        <h1>Ремонт ГБЦ</h1>
+        <p>Профессиональный ремонт и обслуживание головок блока цилиндров. Качество и надёжность.</p>
+        <a href="#" class="btn">Записаться на ремонт</a>
+    </div>
 </body>
 </html>
+
 
 
