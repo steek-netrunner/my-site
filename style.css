@@ -1,55 +1,43 @@
 /* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Oswald', sans-serif;
     background-color: #f4f4f4;
+    color: #fff;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Стили для хедера с фоном */
-#hero {
+/* Хедер */
+header {
     position: relative;
-    background: url('https://via.placeholder.com/1600x900/FF6600/FFFFFF?text=ГБЦ+Ремонт') no-repeat center center/cover;
-    height: 100vh; /* На весь экран */
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1645549047893-b0c6447aec2b?q=80&w=1974&auto=format&fit=crop') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     text-align: center;
 }
 
-#hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Темный налет для улучшения видимости текста */
-}
-
-#hero h1 {
+.hero h1 {
     font-size: 4em;
     color: #fff;
-    z-index: 1;
 }
 
-#hero p {
+.hero p {
     font-size: 1.5em;
-    color: #fff;
     margin-top: 10px;
-    z-index: 1;
 }
 
 .btn {
@@ -60,45 +48,59 @@ h1, h2, p {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    z-index: 1;
 }
 
-/* Стили для секции услуг */
+.btn:hover {
+    background-color: #e55b00;
+}
+
+/* Секционные стили */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #2c2c2c;
+}
+
 #services {
-    background-color: #fff;
-    padding: 40px;
-    margin-top: 20px;
+    background-color: #1a1a1a;
 }
 
-#services h2 {
+#contact {
+    background-color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-#services ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-#services li {
+ul li {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-/* Стили для секции контактов */
-#contact {
-    background-color: #fff;
-    padding: 40px;
-    margin-top: 20px;
+/* Футер */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
 }
 
-#contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+footer p {
+    font-size: 1.2em;
 }
 
-#contact p {
-    font-size: 1.5em;
-    margin: 5px 0;
-}
 
